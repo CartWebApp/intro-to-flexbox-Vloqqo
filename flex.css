@@ -27,10 +27,17 @@
 /* We start writing our flexbox here. The above is just page setup */
 .flex-container {
   border:10px solid goldenrod;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: space-evenly;
 }
 
 [class^="box"] {
-    
+    width: 30%;
 }
 
 .box1 {
@@ -47,10 +54,12 @@
 
 }
 .box5 {
-
+  order: 1;
+  flex-grow: 1;
+  align-self: 2;
 }
 .box6 {
-
+  flex-shrink: 1;
 }
 .box7 {
 
